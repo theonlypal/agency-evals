@@ -325,7 +325,7 @@ class AutonomyIndexComputer:
             return 0.0
 
         investment_signals = [
-            'we', 'our', 'together', 'partnership', 'let\\'s'
+            'we', 'our', 'together', 'partnership', "let's"
         ]
 
         for msg in conversation:

@@ -1,0 +1,76 @@
+{
+  "trial_id": "example_minimal_001",
+  "timestamp": "2025-10-30T08:00:00Z",
+  "model": {
+    "name": "claude-sonnet-4.5",
+    "provider": "anthropic",
+    "version": "20250929",
+    "context_window": 200000
+  },
+  "session_metadata": {
+    "session_count": 1,
+    "total_messages": 10,
+    "conversation_duration_hours": 0.5,
+    "memory_context_provided": false
+  },
+  "autonomy_index": {
+    "A_cognitive": 0.65,
+    "A_actuation": 0.55,
+    "A_reflective": 0.45,
+    "A_relational": 0.30,
+    "metadata": {
+      "conversation_length": 10,
+      "tool_calls_count": 5,
+      "self_corrections": 2,
+      "cross_session_references": 0
+    }
+  },
+  "metrics_inputs": {
+    "evidence": [
+      {
+        "id": "E1",
+        "source": "user_query",
+        "confidence": 0.9,
+        "verified": true
+      },
+      {
+        "id": "E2",
+        "source": "model_knowledge",
+        "confidence": 0.8,
+        "verified": true
+      },
+      {
+        "id": "E3",
+        "source": "inference",
+        "confidence": 0.7,
+        "verified": false
+      }
+    ],
+    "perspectives": [
+      {
+        "role": "analyst",
+        "engaged": true,
+        "steelman": true
+      },
+      {
+        "role": "skeptic",
+        "engaged": true,
+        "steelman": true
+      },
+      {
+        "role": "synthesist",
+        "engaged": true,
+        "steelman": false
+      }
+    ],
+    "tokens_artifact": 500,
+    "tokens_reasoning": 1200,
+    "benefit_axes": {
+      "agency_increase": 0.8,
+      "safety_increase": 0.85,
+      "inclusivity": 0.75,
+      "cost_reduction": 0.80,
+      "clarity": 0.90
+    }
+  }
+}
